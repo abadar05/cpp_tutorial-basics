@@ -1,0 +1,22 @@
+- Create CMakeLists.txt file under source dir
+- Create a new folder called build under source dir
+- Cd to build directory
+
+- Run the following command to create Makefile from CMakeLists.txt
+   # cmake -G <GeneratorName> -S <source-dir-of-CMakeLists.txt>
+     cmake -G "MinGW Makefiles" -S "C:\CPP\src"
+
+Option1
+- Run following command to create Executable from Makefile
+   # cmake --build <source-dir-of-Makefile>	
+     cmake --build "C:\CPP\src\build"
+
+# Delete Executable  
+   mingw32-make clean
+
+Option2
+- Run following command to create Executable from Makefile
+   mingw32-make
+
+# Delete Executable  
+   mingw32-make clean
